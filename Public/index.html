@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Weather Bug Dashboard</title>
+</head>
+
+<body>
+
+    <div id="box">
+        <h1>Weather Bug Dashboard</h1>
+    </div>
+
+    <div id="left-box">
+        <form id="weather-form">
+            </strong><label for="city-input"><strong>Search by City:</strong></label>
+            <br>
+            <input type="text" id="city-input" placeholder="City">
+
+            <input id="searchBtn" class="btn btn-primary mb-2" type="submit" value="Search">
+        </form>
+
+        <div class="cities-array"></div>
+
+    </div>
+
+    <div id="right-box">
+       
+
+        <div class="card" id="weather-view">
+            <div class="card-body">
+                Weekly Weather Forecast
+            </div>
+        </div>
+
+        <div id="title"><strong>Weather Bug's 5-Day Forecast:</strong></div>
+
+        <div id="forecast-icons">
+            <table>
+                <tr>
+                    <th>
+                        <div class="card" id="monday">
+                            <div class="card-body">
+                                <p id="date">01/02/2021</p>
+                                <img src="storm.jpg">
+                                <p id="temp">Temp: 62 &#176F</p>
+                                <p id="humidity">Humidity: 90%</p>
+                                
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="card" id="tuesday">
+                            <div class="card-body">
+                                    <p id="date">01/02/2021</p>
+                                    <img src="sunglasses.png">
+                                    <p id="temp">Temp: 67 &#176F</p>
+                                    <p id="humidity">Humidity: 20%</p>
+                                    
+                            </div>
+                        </div>
+                    </th>
+
+                    <th>
+                        <div class="card" id="wednesday">
+                            <div class="card-body">
+                                    <p id="date">01/02/2021</p>
+                                    <img src="clouds.jpg">
+                                    <p id="temp">Temp: 60 &#176F</p>
+                                    <p id="humidity">Humidity: 40%</p>
+                                    
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="card" id="thursday">
+                            <div class="card-body">
+                                    <p id="date">01/02/2021</p>
+                                    <img src="sunclouds.jpg">
+                                    <p id="temp">Temp: 70 &#176F</p>
+                                    <p id="humidity">Humidity: 20%</p>
+                                    
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div class="card" id="friday">
+                            <div class="card-body">
+                                    <p id="date">01/02/2021</p>
+                                    <img src="all.jpg">
+                                    <p id="temp">Temp: 65 &degF</p>
+                                    <p id="humidity">Humidity: 60%</p>
+                                    
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
